@@ -22,7 +22,6 @@ align-items: center;
 height: 2020px;
 }
 .top .logo {
-background: url('/css/img/logo1.svg') no-repeat;
 position: absolute;
 width: 120px;
 height: 20px;
@@ -56,8 +55,8 @@ height: 20px;
 outline: 1px solid rgb(255, 255, 255);
 display: flex;
 height: 48px;
-padding: 0px 82px;
 border-bottom: 1px solid #626262;
+padding: 0px 82px;
 }
 .search1 {
 border: 0;
@@ -77,14 +76,15 @@ opacity: 0.5;
 border-bottom: 1px solid #626262;
 outline: none;
 width: 90%;
-margin: 0px 78px;
+margin:78px auto;
+margin-top: 134px;
 
 }
 .rest2 {
 width: 217px;
 height: 34px;
 margin-left: 81px;
-margin-top: 203px;
+margin-top: 56px;
 font-family: 'Roboto';
 font-style: normal;
 font-weight: 400;
@@ -100,16 +100,20 @@ grid-template-columns: 420px 420px 420px;
 justify-content: center;
 }
 .card1 {
-border: 1px solid #E0E0E0;
 border-radius: 2px;
 margin-bottom: 16px;
 width: auto;
 margin-right: 16px;
 }
 header {
+z-index: 999;
+position: fixed;
+top: 0;
+width: 100%;
 box-sizing: border-box;
 height: 72px;   
 background: #FFFFFF;
+background-color: #fff;
 box-shadow: 0px 0px 16px rgba(38, 38, 38, 0.16);
 display: flex;
 justify-content: space-between;
@@ -182,14 +186,16 @@ color: #49A144;
 display: flex;
 gap: 20px;
 }
-.fc, .tr, .ig {
+.fc, .tr, .ig, .arrow2 {
     transition: .2s ease-in-out;
+
 }
-.fc:hover, .tr:hover, .ig:hover {
-    transform: scale(1.1);
+.fc:hover, .tr:hover, .ig:hover, .arrow2:hover {
+    transform: scale(1.1) perspective(1000px);
+    
 }
 .middle {
-    display: flex;
+    display: flex; 
     flex-direction: column;
     justify-content: space-evenly;
     text-decoration: 0;
@@ -223,4 +229,28 @@ gap: 20px;
 }
 a {
 text-decoration: none;    
+}
+select {
+    font-size: 15px;
+    margin: 32px 0;
+    color: #fff;
+    border: 2px solid #3b3b3b;
+    border-radius: 5px;
+    padding: 12px 128px 12px 48px;
+    appearance: none;
+    -webkit-appearance: none;
+    outline: none;
+    background: url(img/arrow.svg), url(img/world.svg), #3b3b3b;
+    background-position: 95%, 16.3px;
+    background-repeat: no-repeat, no-repeat;
+}
+.arrow1 {
+position: fixed;
+z-index: 999;
+right: 16px;
+bottom: 16px;
+}
+.arrow2 {
+ width: 70px;  
+ height: 70px; 
 }
