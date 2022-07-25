@@ -169,20 +169,6 @@ gap: 120px;
 padding-bottom: 40px;
 padding-top: 10px;
 }
-select {
-font-size: 15px;
-margin: 32px 0;
-color: #fff;
-border: 2px solid #3b3b3b;
-border-radius: 5px;
-padding: 12px 128px 12px 48px;
-appearance: none;
--webkit-appearance: none;
-outline: none;
-background: url(images/arrow.svg), url(images/world.svg), #3b3b3b;
-background-position: 95%, 16.3px;
-background-repeat: no-repeat, no-repeat;
-}
 .footer-tag {
 font-size: 17px;
 color: #fff;
